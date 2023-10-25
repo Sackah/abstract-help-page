@@ -1,30 +1,8 @@
-import { useEffect, useState } from 'react';
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo.svg';
 import HeaderButtons from './HeaderComponents/HeaderButtons';
-import HamburgerMenu from './HeaderComponents/HamburgerMenu';
 
-type HeaderProps = {
-    toggleSearch: ()=>void;
-    toggleMenu: ()=>void;
-    isActive: boolean;
-}
 
-const Header = (props: HeaderProps) => {
-    const [ isMobile, setIsMobile ] = useState<boolean>(false);
-    const { toggleSearch, toggleMenu, isActive } = props;
-
-    useEffect(()=>{
-        const checkMobile = () => {
-            setIsMobile(window.innerWidth < 1000);
-        }
-
-        checkMobile();
-
-        window.addEventListener('resize', checkMobile);
-
-        //cleanup function
-        return ()=>window.removeEventListener('resize', checkMobile);
-    }, [])
+const Header = () => {
 
     return ( 
         <header>
@@ -36,8 +14,7 @@ const Header = (props: HeaderProps) => {
                         <p>Help Center</p>
                     </div>
                 </div>
-                {!isMobile && <HeaderButtons/>}
-                {isMobile && <HamburgerMenu toggleSearch={toggleSearch} toggleMenu={toggleMenu} isActive={isActive}/>}
+                <HeaderButtons/>
             </div>
         </header>
      );
