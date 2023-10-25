@@ -7,11 +7,11 @@ import MobileNavMenu from './components/MobileNavMenu';
 
 
 function App() {
-  const [ searchToggle, setSearchToggle ] = useState<boolean>(false);
+  const [ isSearchActive, setSearchActive ] = useState<boolean>(false);
   const [ isMenuActive, setIsMenuActive ] = useState<boolean>(false);
 
   const handleSearchToggle = () =>{
-    setSearchToggle((prevState)=>!prevState);
+    setSearchActive((prevState)=>!prevState);
   }
   const handleMenuToggle = () => {
     setIsMenuActive((prevState)=>!prevState);
@@ -19,8 +19,8 @@ function App() {
 
   return (
     <div className="App">
-      {!searchToggle && <Header toggleSearch={handleSearchToggle} toggleMenu={handleMenuToggle} isActive={isMenuActive}/>}
-      {searchToggle && <SearchBar toggleSearch={handleSearchToggle}/>}
+      <Header toggleSearch={handleSearchToggle} toggleMenu={handleMenuToggle} isActive={isMenuActive}/>
+      <SearchBar toggleSearch={handleSearchToggle} isSearchActive={isSearchActive}/>
       <MobileNavMenu isActive={isMenuActive}/>
       <HelpButton/>
     </div>

@@ -19,7 +19,8 @@ const MobileNavMenu = (props: MobileNavMenuProps) => {
 
     return ( 
         <div className={`extended-menu ${isActive ? 'active': ''}`}>
-            {/* Menu items go here */}
+            <p>Submit a request</p>
+            <p>Sign in</p>
         </div>
      );
 }
