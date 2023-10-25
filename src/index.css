@@ -93,6 +93,8 @@ header > div{
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 20;
+  background-color: #fff;
 }
 .extended-menu {
   height: 200px;
