@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import HelpButton from './components/HelpButton';
+import SearchBar from './components/HeaderComponents/SearchBar';
+import MobileNavMenu from './components/MobileNavMenu';
+
 
 function App() {
+  const [ searchToggle, setSearchToggle ] = useState<boolean>(false);
+  const [ isMenuActive, setIsMenuActive ] = useState<boolean>(false);
+
+  const handleSearchToggle = () =>{
+    setSearchToggle((prevState)=>!prevState);
+  }
+  const handleMenuToggle = () => {
+    setIsMenuActive((prevState)=>!prevState);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!searchToggle && <Header toggleSearch={handleSearchToggle} toggleMenu={handleMenuToggle} isActive={isMenuActive}/>}
+      {searchToggle && <SearchBar toggleSearch={handleSearchToggle}/>}
+      <MobileNavMenu isActive={isMenuActive}/>
+      <HelpButton/>
     </div>
   );
 }
