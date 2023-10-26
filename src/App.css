@@ -80,11 +80,10 @@
 .section-1 button[type="submit"]:hover {
   cursor: pointer;
 }
-h4, p{
+.section-2 h4, .section-2 p{
   font-size: 1.45rem;
   margin: 0;
   line-height: 1.8rem;
-  /* letter-spacing: -0.05rem; */
   word-spacing: 0.1rem;
   margin-bottom: 15px;
 }
