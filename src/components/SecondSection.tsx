@@ -16,7 +16,7 @@ const SecondSection = () => {
                     <div className="list-block">
                         <h4>Using Abstract</h4>
                         <p>Abstract let's you manage, version, and document your designs in one place.</p>
-                        <a href="https://www.Sackah.github.io/abstract-about/page" className="category-list-link">Learn More →</a>
+                        <a href="#main" className="category-list-link">Learn More →</a>
                     </div>
                 </div>
                 <div className="grid-item">
@@ -26,7 +26,7 @@ const SecondSection = () => {
                     <div className="list-block">
                         <h4>Manage your account</h4>
                         <p>Configure your account settings, such as your email, profile details, and password.</p>
-                        <a href="https://www.Sackah.github.io/abstract-about/page" className="category-list-link">Learn More →</a>
+                        <a href="#main" className="category-list-link">Learn More →</a>
                     </div>
                 </div>
                 <div className="grid-item">
@@ -36,7 +36,7 @@ const SecondSection = () => {
                     <div className="list-block">
                         <h4>Manage organizations, teams and projects</h4>
                         <p>Use Abstract organizations, teams and projects to organize your people and your work.</p>
-                        <a href="https://www.Sackah.github.io/abstract-about/page" className="category-list-link">Learn More →</a>
+                        <a href="#main" className="category-list-link">Learn More →</a>
                     </div>
                 </div>
                 <div className="grid-item">
@@ -46,7 +46,7 @@ const SecondSection = () => {
                     <div className="list-block">
                         <h4>Manage billing</h4>
                         <p>Change subscriptions and payment details.</p>
-                        <a href="https://www.Sackah.github.io/abstract-about/page" className="category-list-link">Learn More →</a>
+                        <a href="#main" className="category-list-link">Learn More →</a>
                     </div>
                 </div>
                 <div className="grid-item">
@@ -56,7 +56,7 @@ const SecondSection = () => {
                     <div className="list-block">
                         <h4>Authenticate to Abstract</h4>
                         <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
-                        <a href="https://www.Sackah.github.io/abstract-about/page" className="category-list-link">Learn More →</a>
+                        <a href="#main" className="category-list-link">Learn More →</a>
                     </div>
                 </div>
                 <div className="grid-item">
@@ -66,7 +66,7 @@ const SecondSection = () => {
                     <div className="list-block">
                         <h4>Abstract support</h4>
                         <p>Get in touch with a human.</p>
-                        <a href="https://www.Sackah.github.io/abstract-about/page" className="category-list-link">Learn More →</a>
+                        <a href="#main" className="category-list-link">Learn More →</a>
                     </div>
                 </div>
             </div>

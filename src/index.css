@@ -3,6 +3,9 @@
 *,*::before, *::after{
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 :root{
   --main-purple: #4c5fd5;
   --header-background: #000;
