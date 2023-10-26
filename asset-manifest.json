@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/abstract-help-page/static/css/main.a234acc5.css",
-    "main.js": "/abstract-help-page/static/js/main.5e69eac2.js",
+    "main.css": "/abstract-help-page/static/css/main.5b20cd77.css",
+    "main.js": "/abstract-help-page/static/js/main.db408054.js",
     "static/js/787.7962f2b5.chunk.js": "/abstract-help-page/static/js/787.7962f2b5.chunk.js",
     "static/media/logo.svg": "/abstract-help-page/static/media/logo.dc191312d8b97612c53a6e6d2a51b5ad.svg",
+    "static/media/arrow.svg": "/abstract-help-page/static/media/arrow.4593176f3ef6080986c9.svg",
     "index.html": "/abstract-help-page/index.html",
     "static/media/help-icon.svg": "/abstract-help-page/static/media/help-icon.a6f6ea8b2d20e66758b9aa356fe2a09c.svg",
-    "main.a234acc5.css.map": "/abstract-help-page/static/css/main.a234acc5.css.map",
-    "main.5e69eac2.js.map": "/abstract-help-page/static/js/main.5e69eac2.js.map",
+    "main.5b20cd77.css.map": "/abstract-help-page/static/css/main.5b20cd77.css.map",
+    "main.db408054.js.map": "/abstract-help-page/static/js/main.db408054.js.map",
     "787.7962f2b5.chunk.js.map": "/abstract-help-page/static/js/787.7962f2b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a234acc5.css",
-    "static/js/main.5e69eac2.js"
+    "static/css/main.5b20cd77.css",
+    "static/js/main.db408054.js"
   ]
 }
