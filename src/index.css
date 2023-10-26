@@ -6,6 +6,7 @@
 :root{
   --main-purple: #4c5fd5;
   --header-background: #000;
+  --second-purple: #DADBF1;
 }
 
 body {
@@ -43,7 +44,7 @@ header{
   background-color: var(--header-background);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1.5px solid #68737d;
   position: relative;
   z-index: 10;
 }
@@ -130,16 +131,65 @@ header > div{
 }
 .extended-menu p:nth-child(1){
   color: #fff;
-  border-bottom: 1px solid #68737d;
+  border-bottom: 1.5px solid #68737d;
 }
 .extended-menu p:nth-child(2){
   color: #87929d;
 }
+.section-1{
+  height: 45vh;
+  width: 100%;
+  background-color: var(--second-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section-1 input, .section-1 label{
+  display: block;
+}
+form{
+  width: 55%;
+  margin: 0 auto;
+}
+.section-1 label{
+  font-size: 5rem;
+  padding-bottom: 40px;
+  letter-spacing: -0.15rem;
+  word-spacing: 0.1rem;
+}
+.section-1 input{
+  padding: 18px 22px;
+  width: 100%;
+  font-size: 1.4rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff !important;
+  appearance: none;
+  background: url('./assets/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 22px);
+  background-size: 1.8rem;
+}
+.section-1 input:focus-visible{
+  outline: #4c5fd5 auto 0.5px !important;
+}
 
 
-
-@media only screen and (max-width: 100px){
-
+@media only screen and (max-width: 1000px){
+  form{
+    width: 90%;
+  }
+  .section-1{
+    height: 40vh;
+  }
+  .section-1 label{
+    font-size: 5rem;
+    padding-bottom: 40px;
+  }
+  .section-1 input{
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -159,6 +209,19 @@ header > div{
   .header-logo p{
     font-size: 1.3rem;
     font-weight: 700;
+  }
+  .section-1{
+    height: 40vh;
+  }
+  form{
+    width: 90%;
+  }
+  .section-1 label{
+    font-size: 2.4rem;
+    padding-bottom: 45px;
+  }
+  .section-1 input{
+    margin-bottom: 20px;
   }
 }
 

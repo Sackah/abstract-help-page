@@ -5,6 +5,7 @@ import HelpButton from './components/HelpButton';
 import SearchBar from './components/HeaderComponents/SearchBar';
 import MobileNavMenu from './components/MobileNavMenu';
 import MobileHeader from './components/MobileHeader';
+import FirstSection from './components/FirstSection';
 
 
 function App() {
@@ -39,7 +40,8 @@ function App() {
       <SearchBar toggleSearch={handleSearchToggle} isSearchActive={isSearchActive}/>
       {isMobile && <MobileHeader  toggleSearch={handleSearchToggle} toggleMenu={handleMenuToggle} isActive={isMenuActive}/>}
       {isMobile && <MobileNavMenu isActive={isMenuActive}/>}
-      
+      <FirstSection/>
+
       <HelpButton/>
     </div>
   );
