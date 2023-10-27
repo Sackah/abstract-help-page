@@ -7,6 +7,7 @@ import MobileNavMenu from './components/MobileNavMenu';
 import MobileHeader from './components/MobileHeader';
 import FirstSection from './components/FirstSection';
 import SecondSection from './components/SecondSection';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
       {isMobile && <MobileNavMenu isActive={isMenuActive}/>}
       <FirstSection/>
       <SecondSection/>
-
+      <Footer/>
       <HelpButton/>
     </div>
   );

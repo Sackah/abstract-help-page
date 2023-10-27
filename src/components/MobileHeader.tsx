@@ -7,7 +7,7 @@ const MobileHeader = (props: HeaderProps) => {
 
 
     return ( 
-        <header>
+        <header id='main'>
         <div>
             <div className="logo-help">
                 <div className="header-logo">

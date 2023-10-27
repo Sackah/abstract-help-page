@@ -5,7 +5,7 @@ import HeaderButtons from './HeaderComponents/HeaderButtons';
 const Header = () => {
 
     return ( 
-        <header>
+        <header id='main'>
             <div>
                 <div className="logo-help">
                     <div className="header-logo">

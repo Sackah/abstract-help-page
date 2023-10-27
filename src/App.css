@@ -3,9 +3,12 @@
   transition: border 0.5s linear;
 }
 
-.header-logo p:hover{
+.header-logo p:hover, a:hover{
   text-decoration: underline;
   cursor: pointer;
+}
+a{
+  text-decoration: none;
 }
 
 .header-logo img:hover{
@@ -89,9 +92,42 @@
 }
 .grid a{
   font-size: 1.2rem;
-  text-decoration: none;
   color: #4c5fd5;
 }
-.grid a:hover{
-  text-decoration: underline;
+.footer-grid-container h4, .footer-grid-container p, .footer-grid-container h5, .copyright p{
+  margin: 0;
+}
+.footer-grid-container h4{
+  margin-bottom: 15px;
+  font-size: 1.45rem;
+}
+.footer-grid-container h5{
+  margin-top: 35px;
+  font-size: 1.1rem;
+}
+.footer-grid-container a{
+  color: #fff;
+}
+.footer-grid-container p{
+  font-size: 0.95rem;
+  margin-bottom: 7px;
+}
+.copyright p{
+  font-size: 1.35rem;
+  margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 600px){
+  .section-2 h4, .section-2 p{
+    font-size: 1.35rem;
+  }
+  .copyright p{
+    font-size: 1.25rem;
+  }
+}
+/* Nest hub */
+@media (max-width: 1025px) and (min-width: 1005px){
+  .copyright p{
+    font-size: 1.25rem;
+  }
 }
